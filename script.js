@@ -29,7 +29,7 @@ export function calculatorDivide(a, b) {
 export function calculatorMultiply(a, b) {
     return a * b;
 }
-//***streamlined function below */
+//***streamlined function below ***/
 // export function caesarCipher(target, factor) {
 //   const targetArray = target.split("");
 //   console.log(targetArray);
@@ -78,5 +78,14 @@ export function caesarCipher(target, factor) {
 
 export function analyzeArray(targetArray) {
     //logic returns a object that provides Average, Min, Max, Length
+let result = {
+    resultAverage: targetArray.reduce((prev, current) => prev + current, 0)/targetArray.length,
+    resultMin: Math.min(...targetArray),
+    resultMax: Math.max(...targetArray),
+    resultLength: targetArray.length
+}
+console.log('AnalyzeResult', result);
+return result;
 }
 caesarCipher("?AbX!", 3);
+analyzeArray([1,8,3,4,2,6]);

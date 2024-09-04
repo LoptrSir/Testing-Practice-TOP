@@ -73,6 +73,18 @@ it('CaesarCipherNonLetter', () => {
     expect(caesarCipher('!', 3)).toBe('!');
 });
 
-// it('testAnalyzeArray', () => {
-//     expect(analyzeArray(array)).toBe(resultExpected);
-// });
+it('AnalyzeArrayAvg', () => {
+    expect(analyzeArray([1,8,3,4,2,6]).resultAverage).toBe(4);
+});
+
+it('AnalyzeArrayMin', () => {
+    expect(analyzeArray([1,8,3,4,2,6]).resultMin).toBe(1);
+});
+
+it('AnalyzeArrayMax', () => {
+    expect(analyzeArray([1,8,3,4,2,6]).resultMax).toBe(8);
+});
+
+it('AnalyzeArrayLength', () => {
+    expect(analyzeArray([1,8,3,4,2,6]).resultLength).toBe(6);
+});
