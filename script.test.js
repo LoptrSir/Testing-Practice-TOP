@@ -2,7 +2,6 @@
 //Tests
 
 import {
-  helloWorld,
   capitalize,
   reverseString,
   calculatorAdd,
@@ -12,10 +11,6 @@ import {
   caesarCipher,
   analyzeArray,
 } from "./script.js";
-
-it("works", () => {
-  expect(1).toBe(1);
-});
 
 it("Capitalize first letter", () => {
   expect(capitalize("this is a string")).toBe("This is a string");

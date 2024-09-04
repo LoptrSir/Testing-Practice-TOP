@@ -1,11 +1,6 @@
 //TOP Testing Basics Project
 //Code to be tested
 
-export function helloWorld() {
-    console.log("Hello World");
-    return "Hello World";
-}
-
 export function capitalize(target) {
     return target.charAt(0).toUpperCase() + target.slice(1);
 }
